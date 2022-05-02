@@ -3,7 +3,12 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
-  <router-view/>
+  <router-view v-slot="{ Component }">
+    <stack-keep-alive v-slot='{ key }'>
+      <component :is="Component"
+                 :key='key' />
+    </stack-keep-alive>
+  </router-view>
 </template>
 
 <style>
