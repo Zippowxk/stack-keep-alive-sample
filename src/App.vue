@@ -1,7 +1,6 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    please open vue-devtools
   </div>
   <router-view v-slot="{ Component }">
     <stack-keep-alive v-slot='{ key }'>
