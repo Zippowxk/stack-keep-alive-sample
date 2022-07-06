@@ -3,10 +3,15 @@
     please open vue-devtools
   </div>
   <router-view v-slot="{ Component }">
-    <stack-keep-alive v-slot='{ key }'>
-      <component :is="Component"
-                 :key='key' />
-    </stack-keep-alive>
+    <transition>
+      <!-- <stack-keep-alive v-slot='{ key }'>
+        <component :is="Component"
+                     :key='key' />
+      </stack-keep-alive> -->
+      <keep-alive>
+        <component :is="Component"/>
+      </keep-alive>
+    </transition>
   </router-view>
 </template>
 
