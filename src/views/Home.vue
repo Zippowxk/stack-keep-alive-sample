@@ -16,5 +16,8 @@ export default {
   components: {
     HelloWorld,
   },
+  activated() {
+    console.log('home activated');
+  }
 }
 </script>
