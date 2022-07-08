@@ -1,12 +1,12 @@
 <template>
   <div>
     <router-view v-slot="{ Component }">
-      <sk-transition name='fade'>
+      <transition name='fade'>
         <stack-keep-alive v-slot='{ key }'>
           <component :is="Component"
                      :key='key' />
         </stack-keep-alive>
-      </sk-transition>
+      </transition>
     </router-view>
   </div>
 </template>
