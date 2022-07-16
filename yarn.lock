@@ -7205,10 +7205,10 @@ stable@^0.1.8:
   resolved "https://registry.npmmirror.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
 
-stack-keep-alive@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmmirror.com/stack-keep-alive/-/stack-keep-alive-1.0.1.tgz#9601b15663ab9602eb91e060fc21625b0669489c"
-  integrity sha512-4UabegTmbiA2kINi440ZW9W0xEDK9/udv/B3ZL/QCcYHMN8525zxRdcd7OHfzcA4RBN3KBvRwIpfPzTK1QZihQ==
+stack-keep-alive@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/stack-keep-alive/-/stack-keep-alive-1.0.3.tgz#bbd0a0a61aa0639a21fe35ae28734407758fd222"
+  integrity sha512-dvqmDoQ9wnva+btI+BCSmBkf+iX4N5Q9MSvQIrI96AGMN2tKp8LfRQ2kfoaq4nJfX7R7eoxT89QxynCk4ntyhA==
 
 stackframe@^1.1.1:
   version "1.2.1"

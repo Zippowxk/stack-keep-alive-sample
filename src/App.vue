@@ -20,11 +20,12 @@ export default {
 
     return (_openBlock(), _createBlock(_component_router_view, null, {
       default: _withCtx(({ Component }) => [
-        _createVNode(_component_transition, { name: "fade" }, {
+        _createVNode(_Transition, { name: "fade" }, {
           default: _withCtx(() => [
             (_openBlock(),_createBlock(_component_stack_keep_alive, null, {
               default: _withCtx(({key}) => {
                   // if (some) {
+                    debugger
                     return [(_openBlock(), _createBlock(_resolveDynamicComponent(Component), { key }))]
                   // } else {
                   //   return undefined
