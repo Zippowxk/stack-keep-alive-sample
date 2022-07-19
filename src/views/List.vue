@@ -6,10 +6,17 @@
   </div>
 </template>
 <script>
-import { ref } from 'vue'
+import { ref, onActivated, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 export default {
   setup() {
+     onActivated(()=>{
+      console.log('List activated');
+    })
+    onUnmounted(()=>{
+      console.log('List unmounted');
+      
+    })
     let pageIndex = ref(0)
     const router = useRouter()
     const route = useRoute()
@@ -35,5 +42,7 @@ export default {
 <style scoped>
 .list {
   background-color: yellowgreen;
+  width: 100%;
+  height: 100%;
 }
 </style>

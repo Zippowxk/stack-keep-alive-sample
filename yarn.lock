@@ -7205,10 +7205,10 @@ stable@^0.1.8:
   resolved "https://registry.npmmirror.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
 
-stack-keep-alive@^1.0.0-beta.4:
-  version "1.0.0-beta.4"
-  resolved "https://registry.npmmirror.com/stack-keep-alive/-/stack-keep-alive-1.0.0-beta.4.tgz#65f0625728947b873654e0cde7df7c254a2ba991"
-  integrity sha512-MKsJBijB/YXSE3k61Pbqh0k/xkiy11r4QQC6B79CG9ZVtU3CLKFdEMU+1tYx2xAbjFRQxuxdlSZSHotO+OhF1g==
+stack-keep-alive@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/stack-keep-alive/-/stack-keep-alive-1.0.4.tgz#4639419027bc60f48d1bee29966c55b39b7f55de"
+  integrity sha512-8mFNZc+HBNfg8xTxXBxPQV82Ha9iuLMSZs9m0Sbabul5HGXACv9DLd/SA9UsMiwTGrqHW2nL4tFxRhsaWeZdhQ==
 
 stackframe@^1.1.1:
   version "1.2.1"
@@ -7897,10 +7897,8 @@ watchpack@^1.7.4:
   resolved "https://registry.npmmirror.com/watchpack/-/watchpack-1.7.5.tgz#1267e6c55e0b9b5be44c2023aed5437a2c26c453"
   integrity sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==
   dependencies:
-    chokidar "^3.4.1"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
-    watchpack-chokidar2 "^2.0.1"
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
