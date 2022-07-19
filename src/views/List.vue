@@ -26,7 +26,7 @@ export default {
     }
 
     const next = () => {
-      router.replace(`/info?index=0`)  
+      router.push(`/info?index=0`)  
     }
     const back = () => {
       router.go(-1)

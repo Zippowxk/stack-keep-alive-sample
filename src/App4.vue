@@ -72,7 +72,7 @@ body {
 .slide-left-enter-active,
 .slide-left-leave-active {
   will-change: transform;
-  transition: transform 400ms;
+  transition: transform 350ms;
   position: fixed;
   pointer-events: none;
   width: 100%;
@@ -90,7 +90,7 @@ body {
 }
 
 .slide-right-leave-active {
-  transition-delay: 35ms;
+  transition-delay: 100ms;
   transform: translate3d(100%, 0, 0);
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .slide-left-leave-active {
-  transition-delay: 35ms;
+  transition-delay: 100ms;
   transform: translate3d(-100%, 0, 0);
 }
 </style>
