@@ -6,10 +6,17 @@
   </div>
 </template>
 <script>
-import { ref } from 'vue'
+import { ref, onActivated, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 export default {
   setup() {
+     onActivated(()=>{
+      console.log('List activated');
+    })
+    onUnmounted(()=>{
+      console.log('List unmounted');
+      
+    })
     let pageIndex = ref(0)
     const router = useRouter()
     const route = useRoute()
@@ -19,7 +26,7 @@ export default {
     }
 
     const next = () => {
-      router.push(`/info?index=0`)  
+      router.replace(`/info?index=0`)  
     }
     const back = () => {
       router.go(-1)
