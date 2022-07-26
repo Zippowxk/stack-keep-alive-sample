@@ -99,7 +99,7 @@ body {
 }
 
 .slide-left-leave-active {
-  transition-delay: 100ms;
-  transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  z-index: 0;
 }
 </style>
