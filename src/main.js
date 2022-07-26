@@ -8,7 +8,9 @@ let app = createApp(App)
 
 // force open devtools 
 if ('__VUE_DEVTOOLS_GLOBAL_HOOK__' in window) {
-  window.__VUE_DEVTOOLS_GLOBAL_HOOK__.Vue = app
+  if (window.__VUE_DEVTOOLS_GLOBAL_HOOK__) {
+    window.__VUE_DEVTOOLS_GLOBAL_HOOK__.emit("init", app);
+  }
 }
 app.config.devtools = true
 app.use(router).use(StackKeepAlive).mount('#app')
