@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '././',
+  publicPath: '/stack-keep-alive-sample/dist',
 }
