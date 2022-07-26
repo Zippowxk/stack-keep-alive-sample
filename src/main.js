@@ -5,5 +5,6 @@ import router from './router'
 import StackKeepAlive from 'stack-keep-alive'
 // import StackKeepAlive from '../debug/index'
 let app = createApp(App)
+app.config.devtools = true
 app.use(router).use(StackKeepAlive).mount('#app')
 
