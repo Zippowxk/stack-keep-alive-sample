@@ -1,8 +1,9 @@
 <template>
   <div class="info">
-    <h1>This is an Info page, index: {{pageIndex}}</h1>
+    <h1>This is Info page, index: {{pageIndex}}</h1>
     <button @click='back'>back</button>
     <button @click="next">go another page Info</button>
+    <button @click="cart">go cart</button>
   </div>
 </template>
 <script>
@@ -32,8 +33,12 @@ export default {
       console.log('info unmounted');
       
     })
+    const cart = () => {
+      router.push('/cart?index=1')
+    }
 
     return {
+      cart,
       back,
       next,
       pageIndex

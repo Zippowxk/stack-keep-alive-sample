@@ -36,7 +36,6 @@ export default {
   },
   activated() {
     console.log('home activated')
-    debugger
   },
 }
 </script>

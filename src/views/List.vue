@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-    <h1>This is an List page</h1>
+    <h1>This is List page</h1>
     <button @click="back">back</button>
     <button @click="next">go page Info</button>
   </div>

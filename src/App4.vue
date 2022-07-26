@@ -2,7 +2,7 @@
   <div class="root-container">
     <router-view v-slot="{ Component }">
       <sk-transition name='slide-left' back_name='slide-right'>
-        <stack-keep-alive v-slot="{ key }">
+        <stack-keep-alive v-slot="{ key }" :singleton='["/cart"]'>
           <component :is="Component" :key='key'/>
         </stack-keep-alive>
       </sk-transition>
