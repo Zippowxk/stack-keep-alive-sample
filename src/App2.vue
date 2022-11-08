@@ -1,11 +1,9 @@
 <template>
   <div class="root-container">
     <router-view v-slot="{ Component }">
-      <transition :name='animate'>
         <keep-alive >
           <component :is="Component"/>
         </keep-alive>
-      </transition>
     </router-view>
   </div>
 </template>
@@ -19,10 +17,6 @@ export default {
   },
   mounted() {
     this.$router.beforeEach((to, from, next) => {
-      // let isBack = this.$router.__core.isBackward(from)
-      // console.log('====================================')
-      // console.log('isBack: ', isBack)
-      // console.log('====================================')
       this.animate = this.animate === 'slide-left' ? 'slide-right' : 'slide-left'
       next()
     })
